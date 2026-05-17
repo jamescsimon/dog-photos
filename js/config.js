@@ -1,4 +1,4 @@
-const SUPABASE_URL = 'https://kcpcosksdsctlkartyeq.supabase.co/rest/v1/';
+const SUPABASE_URL = 'https://kcpcosksdsctlkartyeq.supabase.co';
 const SUPABASE_ANON_KEY = 'sb_secret__XrYlZW0GVoI1WqSReLG0w_9WdbeIE_';
 
 const db = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
