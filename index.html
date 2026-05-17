@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Photo Voting — Upload</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <span class="site-title">Dog Photo Voting</span>
+    <a href="index.html">Upload</a>
+    <a href="vote.html">Vote</a>
+    <a href="feed.html">Feed</a>
+    <a href="stats.html">Results</a>
+  </nav>
+  <main>
+    <h1>Add a Photo</h1>
+    <p class="subtitle">Upload your favorite photo of him to include it in the vote.</p>
+    <form id="upload-form" class="upload-form">
+      <div class="field">
+        <label for="uploader-name">Your name</label>
+        <input type="text" id="uploader-name" placeholder="e.g. Grandma Sue" required>
+      </div>
+      <div class="field">
+        <label for="photo-file">
+          Photos
+          <span class="field-hint">— select as many as you want</span>
+        </label>
+        <input type="file" id="photo-file" accept="image/*" multiple required>
+        <div id="preview-grid" class="preview-grid"></div>
+      </div>
+      <button type="submit">Upload Photo</button>
+      <p id="status" class="status-msg"></p>
+    </form>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/config.js"></script>
+  <script src="js/upload.js"></script>
+</body>
+</html>

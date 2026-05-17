@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Photo Voting — Vote</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <span class="site-title">Dog Photo Voting</span>
+    <a href="index.html">Upload</a>
+    <a href="vote.html">Vote</a>
+    <a href="feed.html">Feed</a>
+    <a href="stats.html">Results</a>
+  </nav>
+  <main>
+    <h1>Which photo should we paint?</h1>
+    <p class="subtitle">Pick the one that captures him best.</p>
+    <p id="counter" class="counter"></p>
+    <div id="vote-area" class="vote-area" style="display:none">
+      <button class="photo-card" id="card-a">
+        <img id="photo-a-img" alt="Photo A">
+        <p class="uploader-label" id="photo-a-name"></p>
+        <span class="vote-label">Choose This One</span>
+      </button>
+      <div class="vs-divider">VS</div>
+      <button class="photo-card" id="card-b">
+        <img id="photo-b-img" alt="Photo B">
+        <p class="uploader-label" id="photo-b-name"></p>
+        <span class="vote-label">Choose This One</span>
+      </button>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/config.js"></script>
+  <script src="js/vote.js"></script>
+</body>
+</html>

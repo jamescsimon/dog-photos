@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Photo Voting — Results</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <span class="site-title">Dog Photo Voting</span>
+    <a href="index.html">Upload</a>
+    <a href="vote.html">Vote</a>
+    <a href="feed.html">Feed</a>
+    <a href="stats.html">Results</a>
+  </nav>
+  <main>
+    <h1>Photo Rankings</h1>
+    <p class="subtitle">Ranked by how often each photo won its head-to-head matchups.</p>
+    <div id="stats-list"></div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/config.js"></script>
+  <script src="js/stats.js"></script>
+</body>
+</html>
