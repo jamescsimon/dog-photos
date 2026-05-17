@@ -37,6 +37,8 @@ form.addEventListener('submit', async (e) => {
 
     if (uploadError) {
       failed++;
+      statusMsg.textContent = `Storage error on photo ${i + 1}: ${uploadError.message}`;
+      await new Promise(r => setTimeout(r, 2000));
       continue;
     }
 
@@ -46,6 +48,8 @@ form.addEventListener('submit', async (e) => {
 
     if (insertError) {
       failed++;
+      statusMsg.textContent = `DB error on photo ${i + 1}: ${insertError.message}`;
+      await new Promise(r => setTimeout(r, 2000));
     }
   }
 
